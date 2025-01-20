@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Message</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1, p {
+            color: #ff69b4;
+            text-shadow: 1px 1px 2px #ff69b4;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .flowers {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .flower {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://i.imgur.com/eHLRGsw.png'); /* Placeholder image URL for the flower */
+            background-size: cover;
+            position: absolute;
+            animation: float 4s ease-in-out infinite, rotate 8s linear infinite;
+        }
+
+        .top-left { top: 0; left: 0; }
+        .top-right { top: 0; right: 0; }
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-right { bottom: 0; right: 0; }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .center-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #ff69b4;
+            object-fit: cover;
+            box-shadow: 0 0 15px #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aba bata kaile tyesto vandaina</h1>
+    <p>I'm sorry mero motu. I love you so much.</p>
+
+    <img src="https://photos.google.com/share/AF1QipPWUQRTT1lCoCQ7Ykp0JlwFILnBhhWuCVwmsyHLRwfLlsmHP6GPEfMWuQo2P8YINA/photo/AF1QipNzqP98VMVplIXzDdsVxFGaBhd4yI3kO2sx8sO2?key=bTJoaGpKVVhKRXNBbmxtdTFYTlc1bHFUOHRDRV93" 
+     alt="Your Girlfriend's Photo" class="center-image">
+
+    <div class="flowers">
+        <div class="flower top-left"></div>
+        <div class="flower top-right"></div>
+        <div class="flower bottom-left"></div>
+        <div class="flower bottom-right"></div>
+    </div>
+</body>
+</html>
